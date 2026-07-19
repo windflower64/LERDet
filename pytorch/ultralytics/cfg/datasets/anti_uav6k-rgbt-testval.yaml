@@ -1,0 +1,12 @@
+path: F:/data/Anti_UAV_6K
+train: train/visible/images
+val: test/visible/images
+test: test/visible/images
+
+channels: 4
+use_simotm: RGBT
+pairs_rgb_ir: [visible, infrared]
+
+nc: 1
+names:
+  0: uav
