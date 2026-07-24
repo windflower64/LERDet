@@ -1,7 +1,6 @@
 # LERDet source bundle
 
-This directory contains only the source needed to reproduce the final LERDet model and its RK3566 edge implementation. Paper-generation scripts, plotting/table scripts, ablation-only helpers, experiment reports, datasets, and intermediate candidate models are intentionally excluded.
-
+This directory contains only the source needed to reproduce the final LERDet model and its RK3566 edge implementation. 
 ## Contents
 
 - `pytorch/`: the retained Ultralytics training/validation core, the final RGB-T model configuration, DMR/TAG modules, WIoU loss support, and small command-line wrappers.
@@ -9,7 +8,7 @@ This directory contains only the source needed to reproduce the final LERDet mod
 - `deployment/video/`: original paired RGB-IR video end-to-end processing using the same detector implementation and OpenCV software decoding.
 - `scripts/`: reproducibility checks and file-manifest utilities.
 
-The source bundle does not include trained `.pt` or `.rknn` weights. Supply the final checkpoint and the final RKNN model separately. The board runtime header is included for compilation; the runtime library `librknnrt.so` must be installed on the RK3566 device.
+The source bundle does not include trained `.pt` or `.rknn` weights.  The board runtime header is included for compilation; the runtime library `librknnrt.so` must be installed on the RK3566 device.
 
 ## PyTorch path
 
